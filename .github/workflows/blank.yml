@@ -26,7 +26,4 @@ jobs:
       - name: Print ak
         run: echo "ak"
 
-      - name: Run multi-line script
-        run: |
-          echo "Add other actions to build,"
-          echo "test, and deploy your project."
+     
