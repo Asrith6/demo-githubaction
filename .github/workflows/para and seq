@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Run Security Scan
-        run: echo "Running security scan..."
+        run: echo "Running security scan.."
 
   deploy:
     name: Deploy Application
