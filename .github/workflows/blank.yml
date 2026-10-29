@@ -1,6 +1,10 @@
 name: CI
 
 on:
+  push:
+    branches:
+      - main
+
   pull_request:
     branches:
       - main
@@ -11,7 +15,6 @@ jobs:
   build1:
     name: Build 1
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,21 +25,16 @@ jobs:
   build2:
     name: Build 2
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Run single-line script
-        pr-demo
-        run: echo "asrithk"
-
-        
+        run: echo "asr"
 
   build3:
     name: Build 3
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -47,7 +45,6 @@ jobs:
   build4:
     name: Build 4
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -58,7 +55,6 @@ jobs:
   build5:
     name: Build 5
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -69,7 +65,6 @@ jobs:
   build6:
     name: Build 6
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
