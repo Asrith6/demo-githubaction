@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run single-line script
-        run: echo "asr"
+        run: echo "asrithk"
 
   build3:
     name: Build 3
