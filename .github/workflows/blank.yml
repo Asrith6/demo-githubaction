@@ -1,3 +1,4 @@
+
 name: CI
 
 on:
@@ -12,7 +13,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build1:
     name: Build 1
     runs-on: ubuntu-latest
 
@@ -20,10 +21,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Print greeting
+      - name: Run single-line script
         run: echo "Hello, world!"
 
-      - name: Print ak
-        run: echo "ak"
+  build2:
+    name: Build 2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run single-line script
+        run: echo "asr"
 
      
